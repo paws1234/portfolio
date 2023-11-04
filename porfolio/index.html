@@ -12,215 +12,232 @@
 </head>
 
 <body class="bg-blue-500">
-    <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('background-image.jpg'); opacity: 0.5;"></div>
-    <div class="absolute top-0 right-0 m-4">
-        <div id="nav-button" class="bg-blue-700 text-white p-2 text-center hover:bg-blue-800 focus:outline-none z-10">
-            ☰
+    <div class="relative h-screen">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="background-image.jpg" alt="Background Image" class="object-cover w-full h-full opacity-50">
         </div>
-    </div>
-    <div id="nav" class="bg-blue-500 bg-opacity-50 p-4 transform -translate-y-4 scale-x-0 transition-transform duration-300 ease-in-out origin-left;">
-       
-        <ul class="flex space-x-2 items-center bg-blue-500 bg-opacity-0">
-            <li><a href="#home" class="text-white hover:text-yellow-400 transition duration-300">Home 🏠</a></li>
-            <li><a href="#about" class="text-white hover:text-yellow-400 transition duration-300">About Me ℹ️</a></li>
-            <li><a href="#projects" class="text-white hover:text-yellow-400 transition duration-300">Projects 💼</a></li>
-            <li><a href="#contact" class="text-white hover:text-yellow-400 transition duration-300">Contact 📞</a></li>
-        </ul>
-    </div>
-    <header class="relative h-screen flex justify-center items-center bg-blue-500 relative overflow-hidden">
-
-        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('background-image.jpg'); opacity: 0.5;"></div>
     
-        <div class="bg-blue-5000 p-5 text-center text-white relative relative z-10">
-            <div class="flex items-center justify-center">
-                <img src="portlio-profile-pic.jpg" alt="Your Professional Photo" class="rounded-full h-72 w-72 mx-4 transform hover:scale-110 transition-transform duration-500">
-                <div class="text-left ml-8">
-                    <h1 class="text-5xl font-bold transform hover:scale-110 transition-transform duration-500 animate-ping animate-bounce" id="animated-name">Reyvand Jasper Medrano</h1>
-                    <p class="text-lg">Passionate Full-Stack Developer</p>
+        <div class="absolute top-0 right-0 m-4">
+            <div id="nav-button" class="bg-blue-700 text-white p-2 text-center hover:bg-blue-800 focus:outline-none z-10">
+                ☰
+            </div>
+        </div>
+    
+        <div id="nav" class="bg-blue-500 bg-opacity-50 p-4 transform -translate-y-4 scale-x-0 transition-transform duration-300 ease-in-out origin-left">
+            <ul class="flex space-x-2 items-center bg-blue-500 bg-opacity-0">
+                <li><a href="#home" class="text-white hover:text-yellow-400 transition duration-300">Home 🏠</a></li>
+                <li><a href="#about" class="text-white hover:text-yellow-400 transition duration-300">About Me ℹ️</a></li>
+                <li><a href="#projects" class="text-white hover:text-yellow-400 transition duration-300">Projects 💼</a></li>
+                <li><a href="#contact" class="text-white hover:text-yellow-400 transition duration-300">Contact 📞</a></li>
+            </ul>
+        </div>
+    
+        <header class="relative h-screen flex justify-center items-center">
+            <div class="absolute top-0 left-0 w-full h-full">
+                <img src="background-image.jpg" alt="Background Image" class="object-cover w-full h-full opacity-50">
+            </div>
+            <div class="bg-blue-5000 p-5 text-center text-white relative z-10">
+                <div class="flex flex-col items-center justify-center">
+                    <img src="portlio-profile-pic.jpg" alt="Your Professional Photo" class="rounded-full h-48 w-48 lg:h-72 lg:w-72 mx-4 transform hover:scale-110 transition-transform duration-500">
+                    <div class="text-center lg:text-left mt-4 lg:ml-8">
+                        <h1 class="text-4xl lg:text-5xl font-bold transform hover:scale-110 transition-transform duration-500 animate-ping animate-bounce" id="animated-name">Reyvand Jasper Medrano</h1>
+                        <p class="text-lg">Passionate Full-Stack Developer</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
     
     
     
-    <section id="home" class="h-screen bg-white p-8 rounded-lg shadow-md text-center">
-        <div class="flex flex-col items-center justify-center h-full">
-            <h2 class="text-4xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">Welcome to My Portfolio</h2>
-            <div class="bg-gray-100 p-4 rounded-md mb-8">
-                <p class="text-lg text-gray-700" id="animated-text">
-                   
-                </p>
-            </div>
     
-            <div class="mt-8">
-                <h3 class="text-lg text-gray-700 mb-2">Connect with Me:</h3>
-                <div class="flex space-x-4">
-                    <a href="https://www.facebook.com/reyjas.medrano/" class="text-blue-500 hover:underline" target="_blank">Facebook</a>
-                    <a href="https://github.com/paws1234" class="text-blue-500 hover:underline" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/paws-medz-0ba977223/" class ="text-blue-500 hover:underline" target="_blank">LinkedIn</a>
+    <section id="home" class="relative bg-white">
+        <div class="container mx-auto px-4 py-8 md:p-12 lg:p-16 rounded-lg shadow-md text-center relative z-10">
+            <div class="flex flex-col items-center justify-center h-full">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">
+                    Welcome to My Portfolio
+                </h2>
+                <div class="bg-gray-100 p-4 md:p-6 lg:p-8 rounded-md mb-8">
+                    <p class="text-base md:text-lg lg:text-xl text-gray-700" id="animated-text">
+                        
+                    </p>
+                </div>
+    
+                <div class="mt-8">
+                    <h3 class="text-base md:text-lg lg:text-xl text-gray-700 mb-2">Connect with Me:</h3>
+                    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                        <a href="https://www.facebook.com/reyjas.medrano/" class="text-blue-500 hover:underline" target="_blank">Facebook</a>
+                        <a href="https://github.com/paws1234" class="text-blue-500 hover:underline" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/paws-medz-0ba977223/" class="text-blue-500 hover:underline" target="_blank">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
     
+    
+    
 
     
-<section id="about" class="h-screen bg-gray-100 p-8 flex flex-col items-center justify-center">
-    <h2 class="text-4xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">About Me</h2>
-    <div class="bg-white p-4 rounded-md mb-8">
-        <p class="text-lg text-gray-700">
-            Hi there! I'm Reyvand Jasper Medrano, a third-year BSIT student from Cebu Technological University who loves programming.
-        </p>
-        </p>
-        <p class="text-lg text-gray-700 mt-4">
-            With a strong foundation in both front-end and back-end development, I bring a unique skill set to the table, ensuring high-quality web applications that stand out.
-        </p>
-    </div>
+    <section id="about" class="py-8 md:py-12 lg:py-16 bg-gray-100">
+        <div class="container mx-auto p-4 md:p-8 text-center">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">
+                About Me
+            </h2>
+            <div class="bg-white p-4 md:p-6 lg:p-8 rounded-md mb-8">
+                <p class="text-base md:text-lg lg:text-xl text-gray-700">
+                    Hi there! I'm Reyvand Jasper Medrano, a third-year BSIT student from Cebu Technological University who loves programming.
+                </p>
+                <p class="text-base md:text-lg lg:text-xl text-gray-700 mt-4">
+                    With a strong foundation in both front-end and back-end development, I bring a unique skill set to the table, ensuring high-quality web applications that stand out.
+                </p>
+            </div>
     
-
-    <h3 class="text-4xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">Skills:</h3>
-    <div class="bg-white rounded-md p-4 shadow-md mt-2">
-        <ul class="pl-0 list-inside list-none flex flex-wrap">
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> PHP
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> HTML
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> CSS
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-base mr-2">Low</span> Tailwind CSS
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> JavaScript
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> Java
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> C
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> Laravel
-            </li>
-            <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
-                <span class="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-base mr-2">Low</span> Jquery
-            </li>
-        </ul>
-    </div>
-</section>
-
-    
-    
-    
-    
-    
+            <h3 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-blue-500 mb-4 animate-bounce animate infinite duration-5000">
+                Skills:
+            </h3>
+            <div class="bg-white rounded-md p-4 shadow-md mt-2">
+                <ul class="pl-0 list-inside list-none flex flex-wrap">
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> PHP
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> HTML
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> CSS
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-base mr-2">Low</span> Tailwind CSS
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> JavaScript
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> Java
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> C
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-full text-base mr-2">Mid</span> Laravel
+                    </li>
+                    <li class="text-2xl text-blue-500 hover:underline hover:text-blue-700 transform transition duration-300 hover:scale-105 m-2">
+                        <span class="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-base mr-2">Low</span> Jquery
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     
     
-<section id="projects" class="bg-white p-4 h-screen overflow-hidden relative">
-    <h2 class="text-4xl font-semibold text-blue-500 mb-4 text-center animate-bounce animate infinite duration-5000">Projects</h2>
-
-    <div class="flex overflow-x-auto mt-4 w-full">
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (1).png" alt="Project 1" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (1).png')">
+    
+    
+    
+    
+    
+    <section id="projects" class="bg-white p-4 md:p-8 lg:p-12 xl:p-16">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-blue-500 mb-4 text-center animate-bounce animate infinite duration-5000">
+            Projects
+        </h2>
+    
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-4">
+            <div class="relative group">
+                <img src="image (1).png" alt="Project 1" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (1).png')">
                 <p class="text-center mt-2 text-gray-700">Laravel Experimental Project</p>
                 <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
             </div>
-        </div>
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (2).png" alt="Project 2" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (2).png')">
+            <div class="relative group">
+                <img src="image (2).png" alt="Project 2" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (2).png')">
                 <p class="text-center mt-2 text-gray-700">Laravel:Chatapp Project</p>
                 <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
             </div>
+           
+            <div class="relative group">
+                    <img src="image (2).png" alt="Project 2" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (2).png')">
+                    <p class="text-center mt-2 text-gray-700">Laravel:Chatapp Project</p>
+                    <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+               
+            </div>
+            <div class="relative group">
+                    <img src="image (3).png" alt="Project 3" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (3).png')">
+                    <p class="text-center mt-2 text-gray-700">Laravel Crud:Posts Project</p>
+                    <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+                </div>
+           
+                <div class="relative group">
+                    <img src="image (4).png" alt="Project 4" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (4).png')">
+                    <p class="text-center mt-2 text-gray-700">Laravel:Merch store Project</p>
+                    <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+              
+            </div>
+            <div class="relative group">
+                    <img src="image (5).png" alt="Project 5" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (5).png')">
+                    <p class="text-center mt-2 text-gray-700">Laravel:Voting System Project</p>
+                    <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+                
+            </div>
+            <div class="relative group">
+                    <img src="image (6).png" alt="Project 6" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (6).png')">
+                    <p class="text-center mt-2 text-gray-700">Laravel:Employee-Management-System Project</p>
+                    <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+    
+            </div>
+            <div class="relative group">
+                    <img src="image (7).png" alt="Project 7" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (7).png')">
+                    <p class="text-center mt-2 text-gray-700">Employee-Management-System Admin dashboard</p>
+                    <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+                </div>
+           
+                <div class="relative group">
+                    <img src="image (8).png" alt="Project 8" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (8).png')">
+                    <p class="text-center mt-2 text-gray-700">Employee-Management-System User dashboard</p>
+                    <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
+                </div>
+           
         </div>
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (3).png" alt="Project 3" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (3).png')">
-                <p class="text-center mt-2 text-gray-700">Laravel Crud:Posts Project</p>
-                <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-            </div>
+    </section>
+    
+    <section id="contact" class="bg-gray-100 p-4 md:p-8 lg:p-12 xl:p-16">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-blue-500 mb-4 text-center animate-bounce animate infinite duration-5000">
+            Contact
+        </h2>
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <form id="myForm" class="w-full max-w-md p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg transition transform hover:scale-105 focus:outline-none">Send</button>
+            </form>
         </div>
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (4).png" alt="Project 4" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (4).png')">
-                <p class="text-center mt-2 text-gray-700">Laravel:Merch store Project</p>
-                <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-            </div>
-        </div>
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (5).png" alt="Project 5" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (5).png')">
-                <p class="text-center mt-2 text-gray-700">Laravel:Voting System Project</p>
-                <a href="https://github.com/paws1234/laravelexperiment" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-            </div>
-        </div>
-        <div class="flex-shrink-0 pr-2 relative">
-            <div class="group">
-                <img src="image (6).png" alt="Project 6" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (6).png')">
-                <p class="text-center mt-2 text-gray-700">Laravel:Employee-Management-System Project</p>
-                <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-
-            </div>
-        </div>
-        <div class="flex-shrink-0 relative">
-            <div class="group">
-                <img src="image (7).png" alt="Project 7" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (7).png')">
-                <p class="text-center mt-2 text-gray-700">Employee-Management-System Admin dashboard</p>
-                <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-            </div>
-        </div>
-        <div class="flex-shrink-0 relative">
-            <div class="group">
-                <img src="image (8).png" alt="Project 8" class="w-96 h-96 object-cover rounded-lg cursor-pointer transition-transform transform hover:scale-105" onclick="openImage('image (8).png')">
-                <p class="text-center mt-2 text-gray-700">Employee-Management-System User dashboard</p>
-                <a href="https://github.com/paws1234/employee-management-system" class="text-blue-500 text-center mt-2 block" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="contact" class="bg-gray-100 p-4 h-screen overflow-hidden relative">
-    <h2 class="text-4xl font-semibold text-blue-500 mb-4 text-center animate-bounce animate infinite duration-5000">Contact</h2>
-    <div class="mt-6">
-        <form id="myForm" class="p-6 rounded-lg shadow-md">
-            <div class="mb-4">
-                <label for="name" class="block text-gray-700">Name</label>
-                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700">Email</label>
-                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-gray-700">Message</label>
-                <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg transition transform hover:scale-105 focus:outline-none">Send</button>
-        </form>
-    </div>
-</section>
-
-
-<footer class="bg-blue-700 p-4 text-white flex items-center justify-center flex-col">
-    <div class="flex space-x-4">
-        <a href="https://www.facebook.com/reyjas.medrano/" class="text-blue-500 hover:underline" target="_blank">Facebook</a>
-        <a href="https://github.com/paws1234" class="text-blue-500 hover:underline" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/paws-medz-0ba977223/" class="text-blue-500 hover:underline" target="_blank">LinkedIn</a>
-    </div>
-    <p class="mt-4 text-lg">
-        © 2023 Reyvand Jasper Medrano. All rights reserved.
-    </p>
-</footer>
+    </section>
+    
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <footer class="bg-blue-700 p-4 text-white flex flex-col md:flex-row items-center justify-center">
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com/reyjas.medrano/" class="text-blue-500 hover:underline" target="_blank">Facebook</a>
+            <a href="https://github.com/paws1234" class="text-blue-500 hover:underline" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/paws-medz-0ba977223/" class="text-blue-500 hover:underline" target="_blank">LinkedIn</a>
+        </div>
+        <p class="mt-4 text-lg text-center md:text-left">
+            © 2023 Reyvand Jasper Medrano. All rights reserved.
+        </p>
+    </footer>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
        const toggleNavButton = document.getElementById("nav-button");
@@ -288,8 +305,9 @@
         document.body.appendChild(modal);
     }
 
-    $('#myForm').on('submit', function(event) {
-    event.preventDefault(); 
+    $(document).ready(function() {
+  $('#myForm').on('submit', function(event) {
+    event.preventDefault();
 
     var formData = new FormData(this);
     formData.append('service_id', 'service_41k21b4');
@@ -299,37 +317,22 @@
     $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
       type: 'POST',
       data: formData,
-      contentType: false, 
-      processData: false, 
+      contentType: false,
+      processData: false
     })
       .done(function() {
         alert('Your mail is sent!');
+        location.reload(); 
       })
       .fail(function(error) {
         alert('Oops... ' + JSON.stringify(error));
       });
   });
-
-  var data = {
-    service_id: 'service_41k21b4',
-    template_id: 'template_v1zg6mf',
-    user_id: 'Eu_L2JKJcuTWpQbby',
-    template_params: {
-        'username': 'James',
-        'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
-    }
-};
- 
-$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-    type: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json'
-}).done(function() {
-    alert('Your mail is sent!');
-}).fail(function(error) {
-    alert('Oops... ' + JSON.stringify(error));
 });
+
+
     </script>
 </body>
 
 </html>
+
